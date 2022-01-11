@@ -1,5 +1,5 @@
 ---
-  - name: Linux Mint Post-Insallation
+  - name: Linux Mint Post-Installation
     hosts: localhost
     connection: local
 ...
