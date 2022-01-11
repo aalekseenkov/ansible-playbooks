@@ -2,9 +2,11 @@
 
 Ansible playbook for installing tools and applications on localhost with Linux Mint Cinnamon Edition.
 
+## Linux Mint Releases
+
 https://linuxmint.com/download.php
 
-## Manual Steps during Lunux Mint Installation
+## Linux Mint Installation (manual steps)
 
 1. Start _Install Linux Mint_
 1. _English_
@@ -17,14 +19,7 @@ https://linuxmint.com/download.php
 1. _Username_ `<Your_User_Name>`
 1. _Require login_
 
-## Manual Steps after Lunux Mint Installation
-
-### Ansible installation
-
-    $ sudo apt update
-    $ sudo apt install software-properties-common
-    $ sudo add-apt-repository --yes ppa:ansible/ansible
-    $ sudo apt install ansible
+## System Settings and Preparations
 
 ### Virtualbox Guest Additions Installation (optional)
 
@@ -34,6 +29,14 @@ https://linuxmint.com/download.php
     sudo m-a prepare
 
 Choose in VirtualBox window menu bar: _Devices > Insert Guest Additions CD image_
+
+### Ansible installation
+
+    $ sudo apt update
+    $ sudo apt install software-properties-common
+    $ sudo add-apt-repository --yes ppa:ansible/ansible
+    $ sudo apt install ansible
+
 
 ## Usage
 
