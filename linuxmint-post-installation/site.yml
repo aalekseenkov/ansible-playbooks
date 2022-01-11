@@ -1,0 +1,5 @@
+---
+  - name: Linux Mint Post-Insallation
+    hosts: localhost
+    connection: local
+...
