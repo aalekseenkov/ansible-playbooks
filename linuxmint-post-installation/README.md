@@ -22,22 +22,29 @@ https://linuxmint.com/download.php
 ## System Settings and Preparations
 
 ### Virtualbox Guest Additions Installation (optional)
-
-    $ sudo apt update
-    $ sudo apt upgrade
-    $ sudo apt install build-essential module-assistant
-    $ sudo m-a prepare
-
+```
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install build-essential module-assistant
+$ sudo m-a prepare
+```
 Choose in VirtualBox window menu bar: _Devices > Insert Guest Additions CD image_
 
 ### Ansible installation
 
-    $ sudo apt update
-    $ sudo apt install software-properties-common
-    $ sudo add-apt-repository --yes ppa:ansible/ansible
-    $ sudo apt install ansible
-
+```
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes ppa:ansible/ansible
+$ sudo apt install ansible
+```
 
 ## Usage
 
-    ansible-playbook site.yml --K
+1. Restart your operating system
+1. Download and unzip this repository
+1. Open linuxmint-post-installation directory
+1. Run playbook and input your password
+```
+$ ansible-playbook site.yml --K
+```
