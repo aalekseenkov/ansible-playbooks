@@ -23,10 +23,10 @@ https://linuxmint.com/download.php
 
 ### Virtualbox Guest Additions Installation (optional)
 
-    sudo apt update
-    sudo apt upgrade
-    sudo apt install build-essential module-assistant
-    sudo m-a prepare
+    $ sudo apt update
+    $ sudo apt upgrade
+    $ sudo apt install build-essential module-assistant
+    $ sudo m-a prepare
 
 Choose in VirtualBox window menu bar: _Devices > Insert Guest Additions CD image_
 
