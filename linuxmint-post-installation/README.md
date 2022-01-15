@@ -10,13 +10,13 @@ https://linuxmint.com/download.php
 
 1. Start _Install Linux Mint_
 1. _English_
-1. `<Your_Language>` - `<Your_Language>` _(no dead keys)_
-1. _Install third-party_
-1. _Erase disk_ ( + _Encrypt_ + _LVM_ )
+1. _English (US)_ - _English (US)_
+1. _Install multimedia codecs_
+1. _Erase disk_ (_LVM_ + _Encrypt_)
 1. `<Your_City>`
-1. _Name_ `<Firstname>` `<Lastname>`
-1. _Computer's name_ `<Your_PC_Name>`
-1. _Username_ `<Your_User_Name>`
+1. _Your name:_ `<Firstname>` `<Lastname>`
+1. _Your computer's name:_ `<Your_PC_Name>`
+1. _Pick a username:_ `<Your_Username>`
 1. _Require login_
 
 ## System Settings and Preparations
