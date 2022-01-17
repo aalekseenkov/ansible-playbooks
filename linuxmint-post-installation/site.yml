@@ -5,4 +5,5 @@
   roles:
     - apt-upgrade
     - tools
+    - git
 ...
