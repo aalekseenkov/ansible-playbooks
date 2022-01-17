@@ -1,16 +1,16 @@
 ---
 # This role updates the apt packages index and upgrades packages
 
-  - name: updating packages
-    become: yes
-    apt: 
-      update_cache: yes
-      force_apt_get: yes
-      cache_valid_time: 3600
+- name: updating packages
+  become: yes
+  apt: 
+    update_cache: yes
+    force_apt_get: yes
+    cache_valid_time: 3600
 
-  - name: upgrading packages
-    become: yes
-    apt: 
-      upgrade: dist
-      force_apt_get: yes
+- name: upgrading packages
+  become: yes
+  apt: 
+    upgrade: dist
+    force_apt_get: yes
 ...

@@ -1,7 +1,7 @@
 ---
-  - name: linux mint post-installation
-    hosts: localhost
+- name: linux mint post-installation
+  hosts: localhost
 
-    roles:
-      - apt-upgrade
+  roles:
+    - apt-upgrade
 ...
