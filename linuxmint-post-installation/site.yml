@@ -6,4 +6,5 @@
     - apt-upgrade
     - tools
     - git
+    - nvm
 ...
