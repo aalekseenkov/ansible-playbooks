@@ -1,5 +1,7 @@
 ---
-  - name: Linux Mint Post-Installation
+  - name: linux mint post-installation
     hosts: localhost
-    connection: local
+
+    roles:
+      - apt-upgrade
 ...
