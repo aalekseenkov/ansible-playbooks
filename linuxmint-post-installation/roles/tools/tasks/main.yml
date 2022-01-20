@@ -20,4 +20,6 @@
     - curl
     - unzip
     - htop
+    - yamllint
+    - ansible-lint
 ...
