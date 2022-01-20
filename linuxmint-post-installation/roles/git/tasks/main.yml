@@ -2,16 +2,16 @@
 # This role installs the last stable git
 
 - name: adding ppa for the last stable git
-  become: yes
+  become: true
   apt_repository:
     repo: ppa:git-core/ppa
-    codename: focal #fix "Repo doesn't have a release file" error for linux mint 20.X
+    codename: focal  # fix for "repo doesn't have a release file"
 
 - name: installing git
-  become: yes
+  become: true
   apt:
-    update_cache: yes
-    force_apt_get: yes
-    cache_valid_time: 3600      
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
     name: git
 ...

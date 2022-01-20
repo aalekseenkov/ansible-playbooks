@@ -2,18 +2,17 @@
 # This role installs some useful tools for admins and devs
 
 - name: removing vim-tiny
-  become: yes
+  become: true
   apt:
     name: vim-tiny
     state: absent
 
-
 - name: installing tools
-  become: yes
+  become: true
   apt:
-    update_cache: yes
-    force_apt_get: yes
-    cache_valid_time: 3600    
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
     name: "{{ item }}"
   loop:
     - vim

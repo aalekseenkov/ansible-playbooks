@@ -1,18 +1,19 @@
 ---
-# This role installs nvm and some node releases
+# This role installs nvm and some falsede releases
 
 - name: installing nvm
-  become: no
+  become: false
   shell: >
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh |
+    bash
   args:
-    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"        
+    creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
 
 - name: installing the latest release of node
-  become: no
+  become: false
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install node"
 
 - name: installing a specific version of node (v14.18.2)
-  become: no
+  become: false
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 14"
 ...
