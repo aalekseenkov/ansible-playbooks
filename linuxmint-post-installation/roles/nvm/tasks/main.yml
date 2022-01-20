@@ -1,5 +1,5 @@
 ---
-# This role installs nvm and some falsede releases
+# This role installs nvm and some node releases
 
 - name: installing nvm
   become: false
