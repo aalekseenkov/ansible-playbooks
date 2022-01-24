@@ -1,3 +1,11 @@
 ---
 # This role installs the lamp stack
+
+- name: installing apache
+  become: true
+  apt:
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
+    name: apache2
 ...
