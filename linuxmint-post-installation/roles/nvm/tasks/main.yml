@@ -16,4 +16,5 @@
 - name: installing a specific version of node (v14.18.2)
   become: false
   shell: ". {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install 14"
+
 ...
