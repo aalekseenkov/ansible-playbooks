@@ -3,6 +3,7 @@
   hosts: localhost
 
   roles:
+    - aptitude
     - apt-upgrade
     - tools
     - git
