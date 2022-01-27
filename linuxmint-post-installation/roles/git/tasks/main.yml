@@ -1,13 +1,13 @@
 ---
 # This role installs the last stable git
 
-- name: adding ppa for the last stable git
+- name: Add ppa for the last stable git
   become: true
   apt_repository:
     repo: ppa:git-core/ppa
     codename: focal  # fix for "repo doesn't have a release file"
 
-- name: installing git
+- name: Install git
   become: true
   apt:
     update_cache: true

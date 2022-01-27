@@ -1,13 +1,13 @@
 ---
 # This role installs some useful tools for admins and devs
 
-- name: removing vim-tiny
+- name: Remove vim-tiny
   become: true
   apt:
     name: vim-tiny
     state: absent
 
-- name: installing tools
+- name: Install tools
   become: true
   apt:
     update_cache: true
