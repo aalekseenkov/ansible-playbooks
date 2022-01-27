@@ -9,4 +9,14 @@
     cache_valid_time: 3600
     name: apache2
 
+- name: Configure ufw
+  become: true
+  ufw:
+    rule: allow
+    port: "{{ item }}"
+  loop:
+    - "{{ http_port }}"
+    - "{{ https_port }}"
+    - "{{ ssh_port }}"
+
 ...
