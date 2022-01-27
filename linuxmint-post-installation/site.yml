@@ -3,11 +3,17 @@
   hosts: localhost
 
   roles:
-    - aptitude
-    - apt-upgrade
-    - tools
-    - git
-    - nvm
-    - lamp
+    - role: aptitude
+      tags: aptitude_tag
+    - role: apt-upgrade
+      tags: apt_tag
+    - role: tools
+      tags: tools_tag
+    - role: git
+      tags: git_tag
+    - role: nvm
+      tags: nvm_tag
+    - role: lamp
+      tags: lamp_tag
 
 ...
