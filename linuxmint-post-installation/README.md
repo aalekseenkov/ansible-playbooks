@@ -18,6 +18,8 @@ https://linuxmint.com/download.php
 1. _Your computer's name:_ `<Your_PC_Name>`
 1. _Pick a username:_ `<Your_Username>`
 1. _Require login_
+1. Restart Linux Mint
+1. Open GNOME Terminal
 
 ## System Settings and Preparations
 
@@ -41,10 +43,7 @@ $ sudo apt install ansible
 
 ## Usage
 
-1. Restart your operating system
-1. Download and unzip this repository
-1. Open linuxmint-post-installation directory
-1. Run playbook and input your password
+Run playbook in sudo with your personal password
 ```
-$ ansible-playbook site.yml --K
+$ sudo ansible-pull -U https://github.com/aalekseenkov/ansible-playbooks.git -K ./linuxmint-post-installation/site.yml
 ```
