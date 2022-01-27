@@ -1,7 +1,7 @@
 ---
 # This role installs aptitude, which is preferred by Ansible to the apt
 
-- name: Install aptitude
+- name: install aptitude
   become: true
   apt:
     update_cache: true
