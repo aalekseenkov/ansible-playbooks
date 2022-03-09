@@ -19,4 +19,88 @@
     - "{{ https_port }}"
     - "{{ ssh_port }}"
 
+- name: install software-properties-common
+  become: true
+  apt:
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
+    name: software-properties-common
+
+- name: add ppa for the php-fpm
+  become: true
+  apt_repository:
+    repo: ppa:ondrej/php
+    codename: focal
+
+- name: install libapache2-mod-fcgid
+  become: true
+  apt:
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
+    name: libapache2-mod-fcgid
+
+- name: install php v7.2
+  become: true
+  apt:
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
+    name: "{{ item }}"
+  loop:
+    - php7.2
+    - php7.2-fpm
+    - php7.2-mysql
+    - libapache2-mod-php7.2
+    - php7.2-cli
+    - php7.2-cgi
+    - php7.2-gd
+    - php7.2-imap
+    - php7.2-curl
+    - php7.2-intl
+    - php7.2-pspell
+    - php7.2-sqlite3
+    - php7.2-tidy
+    - php7.2-xsl
+    - php7.2-zip
+    - php7.2-mbstring
+    - php7.2-soap
+    - php7.2-opcache
+    - libonig5
+    - php7.2-common
+    - php7.2-readline
+    - php7.2-xml
+
+- name: install php v8.1
+  become: true
+  apt:
+    update_cache: true
+    force_apt_get: true
+    cache_valid_time: 3600
+    name: "{{ item }}"
+  loop:
+    - php8.1
+    - php8.1-fpm
+    - php8.1-mysql
+    - libapache2-mod-php8.1
+    - php8.1-cli
+    - php8.1-cgi
+    - php8.1-gd
+    - php8.1-imap
+    - php8.1-curl
+    - php8.1-intl
+    - php8.1-pspell
+    - php8.1-sqlite3
+    - php8.1-tidy
+    - php8.1-xsl
+    - php8.1-zip
+    - php8.1-mbstring
+    - php8.1-soap
+    - php8.1-opcache
+    - libonig5
+    - php8.1-common
+    - php8.1-readline
+    - php8.1-xml
+
 ...
